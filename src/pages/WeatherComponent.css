@@ -1,0 +1,53 @@
+.weather-container {
+    border: 1px solid #2eb375;
+    border-radius: 60%;
+    padding: 5px;
+
+    margin: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.weather-container:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 15px rgba(25, 119, 95, 0.3);
+}
+
+.weather-icon {
+    font-size: 2.5em;
+
+    color: #41b0fa;
+}
+
+.temperature {
+    margin-top: 8px;
+
+    font-size: 1.3em;
+
+}
+
+.temp {
+    font-weight: bold;
+}
+
+.humidity {
+    margin-top: 8px;
+
+    font-size: 1em;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
